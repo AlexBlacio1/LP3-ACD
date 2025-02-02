@@ -88,7 +88,7 @@
 <!-- Formulario de Registro -->
 <div class="container mt-5">
   <h2>Formulario de Registro de Historial Médico</h2>
-  <form>
+  <form th:action="@{/registrar}" method="post" th:object="${historial}">
 
     <!-- Nombre -->
     <div class="mb-3">
